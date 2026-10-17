@@ -4,8 +4,8 @@
 
 **Team Members:**
 
-- **Naveen Joy**
 - **Sonet D Thomas**
+- **Naveen Joy**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Qiskit](https://img.shields.io/badge/Qiskit-2.6.0-613394.svg?logo=qiskit&logoColor=white)](https://qiskit.org/)
