@@ -26,12 +26,12 @@ To develop a Quantum Key Distribution (QKD) framework using the BB84 protocol, i
 
 - **Pure Qiskit BB84 Framework**: Built an end-to-end 24-qubit BB84 simulation using **Qiskit** and **Qiskit Aer** to demonstrate how Alice and Bob generate shared random secret keys using conjugate non-orthogonal bases ($Z$ and $X$).
 - **Multi-Noise Channel Evaluation**: Systematically modeled and simulated five physical quantum noise channels via Kraus operators at $p = 0.12$:
-  1. **Bit Flip ($X$)**: Flips $|0\rangle \leftrightarrow |1\rangle$ in the computational basis ($Z$-error = 16.7%, $X$-basis immune = 0.0%).
-  2. **Phase Flip ($Z$)**: Inverts superposition phase ($X$-error = 20.0%, $Z$-basis immune = 0.0%).
-  3. **Bit & Phase Flip ($Y / XZ$)**: Simultaneously perturbs bit and phase, driving QBER to **18.18%** and triggering an automatic **Protocol Abort** ($\text{QBER} > 11.0\%$).
-  4. **Amplitude Damping ($\mathcal{E}_{AD}$)**: Models physical $T_1$ energy relaxation ($|1\rangle \to |0\rangle$) with asymmetric decay, remaining secure for reconciliation ($\text{QBER} = 9.09\% \le 11.0\%$).
-  5. **Depolarizing Noise**: Uniform isotropic degradation ($\text{QBER} = 9.09\%$).
-- **Shor-Preskill Security Threshold Benchmarking**: Evaluated measured Quantum Bit Error Rate (QBER) against the theoretical **11.0% Shor-Preskill bound**, establishing a clear cryptographic boundary between secure keys (distillable via reconciliation) and compromised channels.
+  1. **Bit Flip ($X$)**: Flips $|0\rangle \leftrightarrow |1\rangle$ in the computational basis.
+  2. **Phase Flip ($Z$)**: Inverts superposition phase.
+  3. **Bit & Phase Flip ($Y / XZ$)**: Simultaneously perturbs bit and phase.
+  4. **Amplitude Damping ($\mathcal{E}_{AD}$)**: Models physical $T_1$ energy relaxation ($|1\rangle \to |0\rangle$) with asymmetric decay, remaining secure for reconciliation.
+  5. **Depolarizing Noise**: Uniform isotropic degradation.
+- **Shor-Preskill Security Threshold Benchmarking**: Evaluated measured Quantum Bit Error Rate (QBER) against the theoretical **11.0% Shor-Preskill bound**.
 
 ```
 +---------------------------------------------------------------------------------------------------+
