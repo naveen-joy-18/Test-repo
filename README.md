@@ -53,9 +53,6 @@ To develop a Quantum Key Distribution (QKD) framework using the BB84 protocol, i
 |  [Sifted Key A]                                                                   [Sifted Key B]  |
 |  [Sample Error Check] <============= Sample QBER Estimation ===============> [Sample Error Check] |
 |                                                                                                   |
-|  CRYPTOGRAPHIC DECISION:                                                                          |
-|  If QBER <= 11.0%: Proceed to Information Reconciliation (Cascade/LDPC) & Privacy Amplification   |
-|  If QBER >  11.0%: ABORT SESSION (Channel compromised by noise or eavesdropper Eve)               |
 +---------------------------------------------------------------------------------------------------+
 ```
 
@@ -65,7 +62,7 @@ To develop a Quantum Key Distribution (QKD) framework using the BB84 protocol, i
 
 ### Prerequisites
 
-- **Python 3.10+** (64-bit)
+- **Python 3.10+**
 - **Git**
 
 ### Step-by-Step Environment Setup
